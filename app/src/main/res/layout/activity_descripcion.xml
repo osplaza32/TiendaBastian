@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="12dp"
+    android:layout_marginLeft="12dp"
+    tools:context="com.example.bastian.tienda.DescripcionActivity">
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:text="Esta es la actividad de descripcion"/>
+    <TextView
+        android:id="@+id/descripcion"
+        android:layout_below="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textSize="17sp"
+        android:textColor="@android:color/black"
+        android:text="Esta es la actividad de descripcion"/>
+    <TextView
+        android:id="@+id/precio"
+        android:layout_below="@+id/descripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:text="Esta es la actividad de descripcion"/>
+
+    <LinearLayout
+        android:id="@+id/linear_radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/precio"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="M"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="L"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XL"/>
+
+
+
+    </LinearLayout>
+    <EditText
+        android:id="@+id/cantidad"
+        android:layout_below="@+id/linear_radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:hint="Cantidad"/>
+    <Button
+        android:id="@+id/agregar"
+        android:layout_below="@+id/cantidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:text="Agregar a carro de compras"
+        android:background="@android:color/holo_red_dark"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:id="@+id/agregar2"
+        android:layout_below="@+id/agregar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Ver carro"
+        android:background="@android:color/holo_red_light"
+        android:textColor="@android:color/white"/>
+
+
+
+</RelativeLayout>

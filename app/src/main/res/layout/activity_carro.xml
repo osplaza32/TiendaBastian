@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bastian.tienda.CarroActivity">
+
+    <TextView
+        android:id="@+id/carro"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:textColor="@android:color/black"
+        android:text="Carro de compras"/>
+
+    <LinearLayout
+        android:id="@+id/detalle"
+        android:layout_width="290dp"
+        android:layout_height="290dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+
+    >
+    <ListView
+        android:id="@+id/lv"
+        android:layout_below="@+id/carro"
+        android:layout_width="290dp"
+        android:layout_height="290dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"></ListView>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/formulario"
+        android:layout_below="@+id/detalle"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:textColor="@android:color/black"
+        android:text="Formulario"/>
+
+
+    <EditText
+        android:id="@+id/nombrecompleto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/formulario"
+        android:hint="Nombre Completo"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nombrecompleto"
+        android:hint="E-mail"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/telefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email"
+        android:hint="Telefono"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/confirmar"
+        android:layout_below="@+id/telefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Confirmar compra"
+        android:background="@android:color/holo_red_light"
+        android:textColor="@android:color/white"/>
+
+
+
+</RelativeLayout>
+</ScrollView>

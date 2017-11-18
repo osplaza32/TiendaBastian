@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Customiza mobile</string>
+
+    <!-- Http errors -->
+
+    <string name="http_encoding_error">Error de codificación</string>
+    <string name="http_client_protocol_error">Error de protocolo</string>
+    <string name="http_timed_out_error">El tiempo de espera ha acabado. Inténtelo más tarde</string>
+    <string name="http_socket_timed_out_error">El tiempo de respuesta ha acabado. Inténtelo más tarde</string>
+    <string name="http_internet_connection_error">Error de conexión, por favor revise que esté conectado a internet</string>
+    <string name="http_generic_error">Ha ocurrido un problema al realizar ésta operación. Por favor inténtelo de nuevo</string>
+
+    <string name="error">Error</string>
+    <string name="accept">Aceptar</string>
+
+
+</resources>
